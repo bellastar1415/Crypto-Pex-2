@@ -95,17 +95,3 @@ if __name__ == '__main__':
     print(Style.BRIGHT +  Fore.MAGENTA +  f"Starting Task 2...{Style.RESET_ALL}")
     num = 100000
     ChangeContract(num)
-    """
- m,m    dictf = open("dictionary.txt", "rb")
-    appendf = open("samplefiles.txt", "ab")
-    for i in range(len(dict.f)):                        #do this for length of dictionary file
-        newWord = dictf.readline(i)                     #read a word from dictionary.txt
-        appendf.write(newWord)                          #add that word to the samplefile
-        newContents = f.read()                          #read the file with appended word
-        print(hashlib.md5(newContents).hexdigest())     #get the hash of the contents of the file
-
-        with open("samplefiles.txt", "wb") as revertf:  #open a writable file again
-            for line in lines:                          #migrate through the lines
-                if line.strip("\n") != newWord:         #look for the previously appended word
-                    revertf.write(line)                 #if found rewrite over it with """
-
